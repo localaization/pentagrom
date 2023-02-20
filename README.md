@@ -38,3 +38,7 @@ Trying to recover ownership - [Pentagrom web](https://www.pentagrom.com)
 ## Docs
 
 Take a look at the /docs folder in this repo for a summary presentation.
+
+
+## Project Issues  
+Read the issues at https://github.com/users/localaization/projects/1
