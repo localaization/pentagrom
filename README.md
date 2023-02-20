@@ -1,7 +1,7 @@
 # Pentagrom - A unique visual representation in a 3x7 matrix of any written musical note
 
 Pentagrom project was born around 2008 as a patented music controller for education purposes. It was invented by Jaime Iglesias [Linkedin](https://es.linkedin.com/in/jaimeiglesias/ "Linkedin Jaime Iglesias Álvaro-Gracia").  
-Nowadays AI is mature enough for bringing models that might allow to explore the whole potential, and Jaime wants to open source a better music education and comprehension for the mandkind. Let's help him! We are just starting, follow [issues](https://github.com/users/localaization/projects/1)
+Nowadays AI is mature enough for bringing models that might allow to explore the whole potential, and **Jaime** wants to open source a better music education and comprehension for the mandkind. Let's help him! We are just starting, follow [issues](https://github.com/users/localaization/projects/1)
 
 ## Patent
 
@@ -24,10 +24,13 @@ Nowadays AI is mature enough for bringing models that might allow to explore the
 
 <img width="271" alt="pentagrom-presentation-010" src="https://user-images.githubusercontent.com/122649944/220187552-a85d407d-e761-47f3-b8c2-18343aab9e0e.png">
 
-## RRSS
+## Be aware of the scams
+**Jaime** (the inventor) is not longer in possesion of the rrss, web domain and other media channels. We are starting to recover as much information as we can.
 
-[Youtube channel](https://www.youtube.com/@pentagrom_es2489/videos)
-[Twiter](https://twitter.com/Pentagrom)
+[Old - Youtube channel](https://www.youtube.com/@pentagrom_es2489/videos)
+[Old - Twiter](https://twitter.com/Pentagrom)
+[Old - Website](https://web.archive.org/web/20140518132131/http://www.pentagrom.com/)
+
 
 ## Docs
 
