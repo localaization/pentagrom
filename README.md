@@ -16,8 +16,12 @@ Nowadays AI is mature enough for bringing models that might allow to explore the
 
 <img width="344" alt="pentagrom-presentation-003" src="https://user-images.githubusercontent.com/122649944/220186990-38a29bcf-dbbe-4de0-a2f2-9c702266c41b.png">
 
-<img width="271" alt="pentagrom-presentation-010" src="https://user-images.githubusercontent.com/122649944/220187552-a85d407d-e761-47f3-b8c2-18343aab9e0e.png">
 
+<img width="344" alt="005" src="https://user-images.githubusercontent.com/1562701/220193566-1fe63fc1-7cda-4575-b6a4-133d422a5961.png">
+
+<img width="344" alt="004" src="https://user-images.githubusercontent.com/1562701/220193613-18896c70-00c0-4397-a332-f274803309cd.png">
+
+<img width="271" alt="pentagrom-presentation-010" src="https://user-images.githubusercontent.com/122649944/220187552-a85d407d-e761-47f3-b8c2-18343aab9e0e.png">
 
 ## RRSS
 
