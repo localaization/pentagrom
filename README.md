@@ -5,13 +5,14 @@ Nowadays AI is mature enough for bringing models that might allow to explore the
 
 ## Patent
 
+<https://patents.google.com/patent/ES2324268B2/es?assignee=jaime+iglesias&oq=jaime+iglesias>
+
 <img width="344" alt="pentagrom-presentation-000" src="https://user-images.githubusercontent.com/122649944/220181956-6a56ecad-04b9-4ad2-8e94-e9188135110a.png">
 
-
-<https://patents.google.com/patent/ES2324268B2/es?assignee=jaime+iglesias&oq=jaime+iglesias>
 <img width="344" alt="pentagrom-presentation-001" src="https://user-images.githubusercontent.com/122649944/220186883-d19e750f-b4e5-4a4c-8bf1-9e50e6c5e5ff.png">
 
 <img width="344" alt="pentagrom-presentation-002" src="https://user-images.githubusercontent.com/122649944/220186959-6b6dfcc6-6868-4556-8b67-9e8f6fd459f8.png">
+
 <img width="344" alt="pentagrom-presentation-003" src="https://user-images.githubusercontent.com/122649944/220186990-38a29bcf-dbbe-4de0-a2f2-9c702266c41b.png">
 
 
