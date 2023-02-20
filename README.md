@@ -5,6 +5,9 @@ Nowadays AI is mature enough for bringing models that might allow to explore the
 
 ## Patent
 
+<img width="344" alt="pentagrom-presentation-000" src="https://user-images.githubusercontent.com/122649944/220181956-6a56ecad-04b9-4ad2-8e94-e9188135110a.png">
+
+
 <https://patents.google.com/patent/ES2324268B2/es?assignee=jaime+iglesias&oq=jaime+iglesias>
 
 ## RRSS
