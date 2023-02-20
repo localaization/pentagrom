@@ -27,9 +27,10 @@ Nowadays AI is mature enough for bringing models that might allow to explore the
 ## Be aware of the scams
 **Jaime** (the inventor) is not longer in possesion of the rrss, web domain and other media channels. We are starting to recover as much information as we can.
 
-[Old - Youtube channel](https://www.youtube.com/@pentagrom_es2489/videos)  
-[Old - Twiter](https://twitter.com/Pentagrom)  
-[Old - Website](https://web.archive.org/web/20140518132131/http://www.pentagrom.com/)  
+[Trying to recover ownership - Youtube channel](https://www.youtube.com/@pentagrom_es2489/videos)  
+[Trying to recover ownership - Twiter](https://twitter.com/Pentagrom)  
+[Archived - Website](https://web.archive.org/web/20140518132131/http://www.pentagrom.com/)  
+[Trying to recover ownership - Pentagrom web](https://www.pentagrom.com)
 
 
 ## Docs
