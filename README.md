@@ -21,6 +21,7 @@ Project [issues](https://github.com/users/localaization/projects/1)
 
 ### Isomorphic
 <img width="344" alt="005" src="https://user-images.githubusercontent.com/1562701/220193566-1fe63fc1-7cda-4575-b6a4-133d422a5961.png">
+![key-signature](https://user-images.githubusercontent.com/122649944/220492954-1a77fdc9-2c0c-48dc-b0c1-9fb6c5936883.png)
 
 ### Maps univocally any written note
 <img width="344" alt="004" src="https://user-images.githubusercontent.com/1562701/220193613-18896c70-00c0-4397-a332-f274803309cd.png">
