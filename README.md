@@ -6,6 +6,9 @@ Nowadays AI is mature enough for bringing models that might allow exploring the 
 Discord: https://discord.gg/QurpyU2e  
 Project [issues](https://github.com/users/localaization/projects/1)  
 
+## Take a look at this Youtube video example, it will make things clear.
+https://www.youtube.com/watch?v=NeP0kQ6tphI
+
 ## Patent
 
 [<https://patents.google.com/patent/ES2324268B2/es?assignee=jaime+iglesias&oq=jaime+iglesias>](https://patents.google.com/patent/ES2324268B2/en?assignee=jaime+iglesias&oq=jaime+iglesias)
@@ -39,7 +42,7 @@ Take a look at the /docs folder in this repo for a summary presentation.
 Read the issues at https://github.com/users/localaization/projects/1
 
 
-## Be aware of the scams
+## Be aware, this project was first started in 2008 and ended around 2015, we are trying to recover as much information as we can.
 **Jaime** (the inventor) is not longer in possesion of the rrss, web domain and other media channels. We are starting to recover as much information as we can.
 
 Trying to recover ownership - [Youtube channel](https://www.youtube.com/@pentagrom_es2489/videos)  
