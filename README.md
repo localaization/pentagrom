@@ -35,7 +35,7 @@ https://www.youtube.com/watch?v=NeP0kQ6tphI
 
 ## Docs
 
-Take a look at the /docs folder in this repo for a summary presentation.
+Take a look at the [/docs](https://github.com/localaization/pentagrom/tree/master/docs) folder in this repo for a summary presentation.
 
 
 ## Project Issues  
