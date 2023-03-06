@@ -2,6 +2,7 @@
 
 __Pentagrom__ and __Sistema Solfeo XXI__ was invented by Jaime Iglesias ([Linkedin](https://es.linkedin.com/in/jaimeiglesias/ "Linkedin Jaime Iglesias Álvaro-Gracia") and [Patent](https://patents.google.com/patent/ES2324268B2/en?assignee=jaime+iglesias&oq=jaime+iglesias)).  
 Pentagrom allows visualizing all musical notes in an isomorphic, unequivocally, orderly and simple way, which exactly match the way notes are represented in a stave.  
+
 Many papers and documents refer to music visualization as a hard problem to solve, ML algorithms are using some kind of piano roll or midi as data source and are encoded/decoded piano based, writing and reading music software has also some issues for mapping notes when using piano as writing machine, and music has a steep learning rate, from playing the instrument to how to read/write from a stave. We think that some of this issues could be solved using this system which gathers better information from a stave than any other one.  
 
 The PENTAGROM project was created using the new SISTEMA SOLFEO XXI musical theory and notation system based on an array of  
@@ -11,9 +12,9 @@ The PENTAGROM project was created using the new SISTEMA SOLFEO XXI musical theor
 You can add as many arrays (or parts thereof) as one wishes in order to increase the range to be able to represent any written note. 
 This system also merges the two major theory systems, the "Traditional system" (Europe) and the "Movable Do system" (i.e. Berklee College of Music) helping anybody to visualize univocally any written note as in a stave, no matter the instrument.    
 
-Nowadays AI is mature enough for bringing models that might allow exploring the whole potential of this system which, hopefully, could improve the ML algorithms and the way people understand and visualizes music.  
+Nowadays AI is mature enough for bringing models that might allow exploring the whole potential of this system which, hopefully, could improve the ML algorithms, create a better UI and improve the way people understand, reads, write, play, and visualizes music.  
 
-We would like to open source a model using this system and potentially create a visualizing tool for everybody.  
+We would like to open source a model and potentially create a visualizing tool for everybody.  
 
 **We have been granted with some funds and a lot of help from [Algovera.ai](https://app.algovera.ai/), we are creating a team and talking about it here:**  
 Discord: https://discord.gg/QurpyU2e  
