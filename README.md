@@ -1,7 +1,7 @@
 # Pentagrom - Visualizing all musical notes in an isomorphic, unequivocally, orderly and simple way, which exactly match the way notes are represented in a stave  
 
 
-__Pentagrom__ and __Sistema Solfeo XXI__ was invented by Jaime Iglesias ([Linkedin](https://es.linkedin.com/in/jaimeiglesias/ "Linkedin Jaime Iglesias Álvaro-Gracia")).  
+__Pentagrom__ and __Sistema Solfeo XXI__ was invented by Jaime Iglesias ([Linkedin](https://es.linkedin.com/in/jaimeiglesias/ "Linkedin Jaime Iglesias Álvaro-Gracia") [Patent](https://patents.google.com/patent/ES2324268B2/en?assignee=jaime+iglesias&oq=jaime+iglesias)).  
 
 The PENTAGROM project was created using the new SISTEMA SOLFEO XXI musical theory and notation system based on an array of  
 ```[(7 rows x constant) x 3 columns] + key signature```  
@@ -12,7 +12,9 @@ This system also merges the two major theory systems, the "Traditional system" (
   
 Nowadays AI is mature enough for bringing models that might allow exploring the whole potential of this system which, hopefully, could improve the ML algorithims and the way people understand and visualizes music.  
 
-**We are talking about it here:**  
+We would like to open source a model using this system and potentially create a visualizing tool for everybody.  
+
+**We are talking about it here and creating a team**  
 Discord: https://discord.gg/QurpyU2e  
 Project [issues](https://github.com/users/localaization/projects/1)  
 
