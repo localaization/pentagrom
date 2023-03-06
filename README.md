@@ -1,8 +1,15 @@
-# Pentagrom - A unique visual representation in a 7x3 matrix of any written musical note
+# Pentagrom - Visualizing all musical notes in an isomorphic, unequivocally, orderly and simple way, which exactly match the way notes are represented in a stave  
 
-Pentagrom project was born around 2008 as a patented music controller for education purposes. It was invented by Jaime Iglesias ([Linkedin](https://es.linkedin.com/in/jaimeiglesias/ "Linkedin Jaime Iglesias Álvaro-Gracia")).  
-Nowadays AI is mature enough for bringing models that might allow exploring the whole potential, and **Jaime** wants to open source a better music education and comprehension for mankind. 
-**Let's help him!**  
+
+__Pentagrom__ and __Sistema Solfeo XXI__ was invented by Jaime Iglesias ([Linkedin](https://es.linkedin.com/in/jaimeiglesias/ "Linkedin Jaime Iglesias Álvaro-Gracia")).  
+
+The PENTAGROM project was created using the new SISTEMA SOLFEO XXI musical theory and notation system based on an array of ```[(7 rows x constant) x 3 columns] + key signature```  
+You can add as many arrays (or parts thereof) as one wishes in order to increase the range to be able to represent any written note. 
+This system also merges the two major theory systems, the "Traditional system" (Europe) and the "Movable Do system" (i.e. Berklee College of Music) helping anybody to visualize univocally any written note as in a stave, no matter the instrument.  
+  
+Nowadays AI is mature enough for bringing models that might allow exploring the whole potential of this system which, hopefully, could improve the ML algorithims and the way people understand and visualizes music.  
+
+**We are talking about it here:**  
 Discord: https://discord.gg/QurpyU2e  
 Project [issues](https://github.com/users/localaization/projects/1)  
 
