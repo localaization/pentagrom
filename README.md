@@ -3,7 +3,7 @@
 __Pentagrom__ and __Sistema Solfeo XXI__ was invented by Jaime Iglesias ([Linkedin](https://es.linkedin.com/in/jaimeiglesias/ "Linkedin Jaime Iglesias Álvaro-Gracia") and [Patent](https://patents.google.com/patent/ES2324268B2/en?assignee=jaime+iglesias&oq=jaime+iglesias)).  
 Pentagrom allows visualizing all musical notes in an isomorphic, unequivocally, orderly and simple way, which exactly match the way notes are represented in a stave.  
 
-Many papers and documents refer to music visualization as a hard problem to solve, ML algorithms are using some kind of piano roll or midi as data source and are encoded/decoded piano based, writing and reading music software has also some issues for mapping notes when using piano as writing machine, and music has a steep learning rate, from playing the instrument to how to read/write from a stave. We think that some of this issues could be solved using this system which gathers better information from a stave than any other one.  
+Many papers and documents refer to music visualization as a hard problem to solve, ML algorithms are using some kind of piano roll or midi as data source and are encoded/decoded piano based, writing and reading music software has also some issues for mapping notes when using piano as writing machine, and music has a steep learning rate. We think that some of this issues could be solved using this system which gathers better information from a stave than any other one.  
 
 The PENTAGROM project was created using the new SISTEMA SOLFEO XXI musical theory and notation system based on an array of  
 ```[(7 rows x constant) x 3 columns] + key signature```  
@@ -70,3 +70,7 @@ Trying to recover ownership - [Youtube channel](https://www.youtube.com/@pentagr
 Trying to recover ownership - [Twiter](https://twitter.com/Pentagrom)  
 Archived - [Website](https://web.archive.org/web/20140518132131/http://www.pentagrom.com/)  
 Trying to recover ownership - [Pentagrom web](https://www.pentagrom.com)
+
+## References  
+- [Redit - https://www.reddit.com/r/musictheory/comments/4p010u/piano_roll_vs_traditional_notation/](https://www.reddit.com/r/musictheory/comments/4p010u/piano_roll_vs_traditional_notation/)
+
