@@ -98,4 +98,5 @@ Trying to recover ownership - [Pentagrom web](https://www.pentagrom.com)
 - Visualizing Music Self-Attention - [https://openreview.net/pdf](https://openreview.net/pdf)
 - Visualizing Music Transformer - [https://storage.googleapis.com/nips-workshop-visualization/index.html](https://storage.googleapis.com/nips-workshop-visualization/index.html)
 - MuseMorphose: Full-Song and Fine-Grained Piano Music Style Transfer with One Transformer VAE - [https://arxiv.org/abs/2105.04090](https://arxiv.org/abs/2105.04090)
+- Humdrum - Basic Pitch Translations - [https://www.humdrum.org/guide/ch04/](https://www.humdrum.org/guide/ch04/)  
 
