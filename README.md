@@ -1,7 +1,7 @@
 # Pentagrom - Visualizing all musical notes in a simple way
 
 __Pentagrom__ and __Sistema Solfeo XXI__ was invented by Jaime Iglesias ([Linkedin](https://es.linkedin.com/in/jaimeiglesias/ "Linkedin Jaime Iglesias Álvaro-Gracia") and [Patent](https://patents.google.com/patent/ES2324268B2/en?assignee=jaime+iglesias&oq=jaime+iglesias)), the musician leading this project.  
-Pentagrom allows visualizing all musical notes in an isomorphic, unequivocally, orderly and simple way, which exactly match the way notes are represented in a stave.  
+Pentagrom allows visualizing all musical notes in an isomorphic, unequivocally, orderly and simple way, which exactly match the way notes are represented in a stave. As simple as it looks like, nobody came before with this "pattern".  
 
 Many papers and documents refer to music transcription, translation and visualization as a hard problem to solve, ML algorithms are sometimes piano roll or midi based, and music has a steep learning rate. We think some of these issues could be solved using this system.
 
@@ -100,5 +100,6 @@ Trying to recover ownership - [Pentagrom web](https://www.pentagrom.com)
 - MuseMorphose: Full-Song and Fine-Grained Piano Music Style Transfer with One Transformer VAE - [https://arxiv.org/abs/2105.04090](https://arxiv.org/abs/2105.04090)
 - ISMIR 2018 - Session A - [https://www.youtube.com/live/w-fsuRbAVuo?feature=share](https://www.youtube.com/live/w-fsuRbAVuo?feature=share)
 - Humdrum - Basic Pitch Translations - [https://www.humdrum.org/guide/ch04/](https://www.humdrum.org/guide/ch04/)
+- Humdrum - Searching for Patterns - [https://www.humdrum.org/guide/ch21/](https://www.humdrum.org/guide/ch21/)
 - School of Physics Sydney, Australia - Note names, MIDI numbers and frequencies - [http://www.phys.unsw.edu.au/jw/notes.html](http://www.phys.unsw.edu.au/jw/notes.html)
 
