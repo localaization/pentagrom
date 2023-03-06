@@ -1,9 +1,8 @@
 # Pentagrom - Visualizing all musical notes in a simple way
 
-Pentagrom allows visualizing all musical notes in an isomorphic, unequivocally, orderly and simple way, which exactly match the way notes are represented in a stave.  
-Many papers and documents refer to music visualization as a hard problem to solve, ML algorithms are using some kind of piano roll or midi as data source and encoding/decoding using piano based vectors, writting and reading music software has also some issues for mapping notes when using piano as writting machine, music has a steep learning rate, from playing the instrument to how to read/write from a stave. We think that some of this issues could be solved using this system which gathers better information from a stave than any other one.
-
 __Pentagrom__ and __Sistema Solfeo XXI__ was invented by Jaime Iglesias ([Linkedin](https://es.linkedin.com/in/jaimeiglesias/ "Linkedin Jaime Iglesias Álvaro-Gracia") and [Patent](https://patents.google.com/patent/ES2324268B2/en?assignee=jaime+iglesias&oq=jaime+iglesias)).  
+Pentagrom allows visualizing all musical notes in an isomorphic, unequivocally, orderly and simple way, which exactly match the way notes are represented in a stave.  
+Many papers and documents refer to music visualization as a hard problem to solve, ML algorithms are using some kind of piano roll or midi as data source and encoding/decoding using piano based vectors, writting and reading music software has also some issues for mapping notes when using piano as writting machine, music has a steep learning rate, from playing the instrument to how to read/write from a stave. We think that some of this issues could be solved using this system which gathers better information from a stave than any other one.  
 
 The PENTAGROM project was created using the new SISTEMA SOLFEO XXI musical theory and notation system based on an array of  
 ```[(7 rows x constant) x 3 columns] + key signature```  
