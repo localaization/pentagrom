@@ -5,7 +5,8 @@ __Pentagrom__ and __Sistema Solfeo XXI__ was invented by Jaime Iglesias ([Linked
 
 The PENTAGROM project was created using the new SISTEMA SOLFEO XXI musical theory and notation system based on an array of  
 ```[(7 rows x constant) x 3 columns] + key signature```  
-<img width="344" alt="004" src="https://user-images.githubusercontent.com/1562701/220193613-18896c70-00c0-4397-a332-f274803309cd.png">
+
+<img width="344" alt="004" src="https://user-images.githubusercontent.com/1562701/220193613-18896c70-00c0-4397-a332-f274803309cd.png">  
 You can add as many arrays (or parts thereof) as one wishes in order to increase the range to be able to represent any written note. 
 This system also merges the two major theory systems, the "Traditional system" (Europe) and the "Movable Do system" (i.e. Berklee College of Music) helping anybody to visualize univocally any written note as in a stave, no matter the instrument.  
   
