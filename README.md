@@ -10,9 +10,9 @@ The PENTAGROM project was created using the new SISTEMA SOLFEO XXI musical theor
 
 <img width="344" alt="004" src="https://user-images.githubusercontent.com/1562701/220193613-18896c70-00c0-4397-a332-f274803309cd.png">  
 You can add as many arrays (or parts thereof) as one wishes in order to increase the range to be able to represent any written note. 
-This system also merges the two major theory systems, the "Traditional system" (Europe) and the "Movable Do system" (i.e. Berklee College of Music) helping anybody to visualize univocally any written note as in a stave, no matter the instrument.    
+This system also merges the two major theory systems, the "Traditional system" (Europe) and the "Movable Do system" (i.e. Berklee College of Music) helping anybody to visualize univocally any written note as in a stave, also provides a mathematical representation which could improve some pitch translations and representations.
 
-Nowadays AI is mature enough for bringing models that might allow exploring the whole potential of this system which, hopefully, could improve the ML algorithms, create a better UI and improve the way people understand, read, write, play, and visualize music.  
+Nowadays AI is mature enough for bringing models that might allow exploring the whole potential of this system which, hopefully, could improve them, create a better UI through software and improve the way people understand, read, write, play, and visualize music.  
 
 We would like to open source a model and potentially create a visualizing tool for everybody.  
 
