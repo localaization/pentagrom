@@ -9,6 +9,7 @@ The PENTAGROM project was created using the new SISTEMA SOLFEO XXI musical theor
 ```[(7 rows x constant) x 3 columns] + key signature```  
 
 <img width="344" alt="004" src="https://user-images.githubusercontent.com/1562701/220193613-18896c70-00c0-4397-a332-f274803309cd.png">  
+
 - 7 rows: corresponding to notes of the major scale.
 - constant: representing the number of octaves.
 - 3 columns: the central column contains the notes of the key
