@@ -61,7 +61,7 @@ Take a look at the [/docs](https://github.com/localaization/pentagrom/tree/maste
 Read the issues at https://github.com/users/localaization/projects/1
 
 
-## Be aware, this project was first started in 2008 and ended around 2015, we are trying to recover as much information as we can.
+## This project was first started in 2008 and ended around 2015, we are recovering old information.
 **Jaime** (the inventor) is not longer in possesion of the rrss, web domain and other media channels. We are starting to recover as much information as we can.
 
 Trying to recover ownership - [Youtube channel](https://www.youtube.com/@pentagrom_es2489/videos)  
