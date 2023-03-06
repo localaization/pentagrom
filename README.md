@@ -9,6 +9,15 @@ The PENTAGROM project was created using the new SISTEMA SOLFEO XXI musical theor
 ```[(7 rows x constant) x 3 columns] + key signature```  
 
 <img width="344" alt="004" src="https://user-images.githubusercontent.com/1562701/220193613-18896c70-00c0-4397-a332-f274803309cd.png">  
+- 7 rows: corresponding to notes of the major scale.
+- constant: representing the number of octaves.
+- 3 columns: the central column contains the notes of the key
+signature scale, while the side columns refer to the notes which are
+half a tone up and down (normally sharps and flats).
+- Key signature: Enables one to tune the instrument in any key. The
+musician can also add more key signatures in addition to the 14
+existing ones. Thus giving rise to new music.  
+
 You can add as many arrays (or parts thereof) as one wishes in order to increase the range to be able to represent any written note. 
 This system also merges the two major theory systems, the "Traditional system" (Europe) and the "Movable Do system" (i.e. Berklee College of Music) helping anybody to visualize univocally any written note as in a stave, also provides a mathematical representation which could improve some pitch translations and representations.
 
@@ -34,16 +43,7 @@ https://www.youtube.com/watch?v=NeP0kQ6tphI
 
 <img width="344" alt="pentagrom-presentation-002" src="https://user-images.githubusercontent.com/122649944/220186959-6b6dfcc6-6868-4556-8b67-9e8f6fd459f8.png">
 
-<img width="344" alt="pentagrom-presentation-003" src="https://user-images.githubusercontent.com/122649944/220186990-38a29bcf-dbbe-4de0-a2f2-9c702266c41b.png">  
-
-- 7 rows: corresponding to notes of the major scale.  
-- constant: representing the number of octaves.  
-- 3 columns: the central column contains the notes of the key
-signature scale, while the side columns refer to the notes which are
-half a tone up and down (normally sharps and flats).  
-- Key signature: Enables one to tune the instrument in any key. The
-musician can also add more key signatures in addition to the 14
-existing ones. Thus giving rise to new music.  
+<img width="344" alt="pentagrom-presentation-003" src="https://user-images.githubusercontent.com/122649944/220186990-38a29bcf-dbbe-4de0-a2f2-9c702266c41b.png">   
 
 ### Isomorphic
 Key signature enables transposition  
