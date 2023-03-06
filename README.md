@@ -1,7 +1,7 @@
 # Pentagrom - Visualizing all musical notes in a simple way
 
 Pentagrom allows visualizing all musical notes in an isomorphic, unequivocally, orderly and simple way, which exactly match the way notes are represented in a stave.  
-
+Many papers and documents refer to music visualization as a hard problem to solve, ML algorithms are using some kind of piano roll or midi as data source and encoding/decoding using piano based vectors, writting and reading music software has also some issues for mapping notes when using piano as writting machine, music has a steep learning rate, from playing the instrument to how to read/write from a stave. We think that some of this issues could be solved using this system which gathers better information from a stave than any other one.
 
 __Pentagrom__ and __Sistema Solfeo XXI__ was invented by Jaime Iglesias ([Linkedin](https://es.linkedin.com/in/jaimeiglesias/ "Linkedin Jaime Iglesias Álvaro-Gracia") and [Patent](https://patents.google.com/patent/ES2324268B2/en?assignee=jaime+iglesias&oq=jaime+iglesias)).  
 
@@ -10,8 +10,8 @@ The PENTAGROM project was created using the new SISTEMA SOLFEO XXI musical theor
 
 <img width="344" alt="004" src="https://user-images.githubusercontent.com/1562701/220193613-18896c70-00c0-4397-a332-f274803309cd.png">  
 You can add as many arrays (or parts thereof) as one wishes in order to increase the range to be able to represent any written note. 
-This system also merges the two major theory systems, the "Traditional system" (Europe) and the "Movable Do system" (i.e. Berklee College of Music) helping anybody to visualize univocally any written note as in a stave, no matter the instrument.  
-  
+This system also merges the two major theory systems, the "Traditional system" (Europe) and the "Movable Do system" (i.e. Berklee College of Music) helping anybody to visualize univocally any written note as in a stave, no matter the instrument.    
+
 Nowadays AI is mature enough for bringing models that might allow exploring the whole potential of this system which, hopefully, could improve the ML algorithims and the way people understand and visualizes music.  
 
 We would like to open source a model using this system and potentially create a visualizing tool for everybody.  
