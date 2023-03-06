@@ -102,4 +102,5 @@ Trying to recover ownership - [Pentagrom web](https://www.pentagrom.com)
 - Humdrum - Basic Pitch Translations - [https://www.humdrum.org/guide/ch04/](https://www.humdrum.org/guide/ch04/)
 - Humdrum - Searching for Patterns - [https://www.humdrum.org/guide/ch21/](https://www.humdrum.org/guide/ch21/)
 - School of Physics Sydney, Australia - Note names, MIDI numbers and frequencies - [http://www.phys.unsw.edu.au/jw/notes.html](http://www.phys.unsw.edu.au/jw/notes.html)
+- Digilent - Music Theory Basics - (https://learn.digilentinc.com/Documents/400)[https://learn.digilentinc.com/Documents/400]
 
