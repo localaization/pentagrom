@@ -1,4 +1,6 @@
-# Pentagrom - Visualizing all musical notes in an isomorphic, unequivocally, orderly and simple way, which exactly match the way notes are represented in a stave  
+# Pentagrom - Visualizing all musical notes in a simple way
+
+Pentagrom allows visualizing all musical notes in an isomorphic, unequivocally, orderly and simple way, which exactly match the way notes are represented in a stave.  
 
 
 __Pentagrom__ and __Sistema Solfeo XXI__ was invented by Jaime Iglesias ([Linkedin](https://es.linkedin.com/in/jaimeiglesias/ "Linkedin Jaime Iglesias Álvaro-Gracia") and [Patent](https://patents.google.com/patent/ES2324268B2/en?assignee=jaime+iglesias&oq=jaime+iglesias)).  
