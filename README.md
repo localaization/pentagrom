@@ -46,6 +46,7 @@ musician can also add more key signatures in addition to the 14
 existing ones. Thus giving rise to new music.  
 
 ### Isomorphic
+Key signature enables transposition
 <img width="344" alt="005" src="https://user-images.githubusercontent.com/1562701/220193566-1fe63fc1-7cda-4575-b6a4-133d422a5961.png">
 
 <img width="344" alt="005" src="https://user-images.githubusercontent.com/122649944/220493127-c6c024f5-466f-4073-8fbd-968b69f9da70.png">
