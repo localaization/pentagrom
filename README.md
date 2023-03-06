@@ -14,7 +14,7 @@ Nowadays AI is mature enough for bringing models that might allow exploring the 
 
 We would like to open source a model using this system and potentially create a visualizing tool for everybody.  
 
-**We are talking about it here and creating a team**  
+**We are talking about it here and creating a team. We have been granted with some funds and a lot of help from (Algovera.ai)[https://app.algovera.ai/]**  
 Discord: https://discord.gg/QurpyU2e  
 Project [issues](https://github.com/users/localaization/projects/1)  
 
