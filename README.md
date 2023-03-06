@@ -99,5 +99,6 @@ Trying to recover ownership - [Pentagrom web](https://www.pentagrom.com)
 - Visualizing Music Transformer - [https://storage.googleapis.com/nips-workshop-visualization/index.html](https://storage.googleapis.com/nips-workshop-visualization/index.html)
 - MuseMorphose: Full-Song and Fine-Grained Piano Music Style Transfer with One Transformer VAE - [https://arxiv.org/abs/2105.04090](https://arxiv.org/abs/2105.04090)
 - ISMIR 2018 - Session A - [https://www.youtube.com/live/w-fsuRbAVuo?feature=share](https://www.youtube.com/live/w-fsuRbAVuo?feature=share)
-- Humdrum - Basic Pitch Translations - [https://www.humdrum.org/guide/ch04/](https://www.humdrum.org/guide/ch04/)  
+- Humdrum - Basic Pitch Translations - [https://www.humdrum.org/guide/ch04/](https://www.humdrum.org/guide/ch04/)
+- School of Physics Sydney, Australia - Note names, MIDI numbers and frequencies - [http://www.phys.unsw.edu.au/jw/notes.html](http://www.phys.unsw.edu.au/jw/notes.html)
 
