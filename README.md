@@ -1,4 +1,81 @@
-# Pentagrom - Visualizing all musical notes in a simple way
+# Pentagrom - Music encoder and visualization tool
+
+Focusing on the diatonic scale (which consists of the 7 primary notes
+in Western music) without considering any sharps or flats, the list of
+individual notes is as follows:
+_A,B,C,D,E,F,G_
+
+These are the fundamental note names. By adding sharps or flats (as determined 
+by the key signature) and combining them with the octave number, we can represent 
+any note in the Western musical system as a matrix of 7x3.
+Note names are sorted bottom up, as they would appear in a staff (more about visualization later).
+
+    | Flat  | Natural | Sharp |
+-------------------------------
+G   |   1   |    2   |   3    |
+-------------------------------
+F   |   4   |    5   |   X    | Ex. X -> F♯
+-------------------------------
+E   |   7   |    8   |   9    |
+-------------------------------
+D   |   10  |    X   |  12    | Ex. X -> D
+-------------------------------
+C   |   13  |   14   |  15    |
+-------------------------------
+B   |   16  |   17   |  18    |
+-------------------------------
+A   |   X   |   20   |  21    | Ex. X -> A♭
+-------------------------------
+
+
+# Vectorizing
+Note Representation:
+For any note in its natural, sharp, or flat form, we can set the corresponding element of the vector to 1, and all other elements to 0 (one hot).
+
+For example, for the note F♯:
+0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+
+For example, for the note A♭:
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+
+**Include Octaves**
+Assuming we're dealing with common octaves in Western music (for example from C1 to C8), that's 8 different octaves. We can one-hot encode these, adding 8 elements to our vector, where each position corresponds to one of these octaves.
+
+The updated vector length is now:
+21(notes) + 8(octaves) = 29.
+
+**Include Key Signatures**
+Let's take the 7 main diatonic key signatures based on the natural major scales (C, D, E, F, G, A, B) and their relative minor keys. We can represent each of these major and minor keys with a one-hot encoded value (in this case if there are no flats or sharps as in C Major or A minor, all values will be 0. This is to be discussed)
+That's 7(majorkeys) + 7(minorkeys) = 14 key different signatures.
+The updated vector length is now: 
+29(notes and octaves) + 14(keysignatures) = 43
+
+# Vector Indexing (expanded)
+0-20:    Note matrix as before
+21-28:   Octaves (C1 to C8)
+29-42:   Key signatures (C Major, C Minor, D Major, ... B Major, B Minor)
+
+**Example**
+For a note F♯ in the octave 4 and in the key of G Major:
+
+The vector will have a 1 at index 5 (for the F♯ note), a 1 at index 24 (for the 4th octave), and a 1 at index 34 (for G Major). All other elements will be set to 0.
+Example Vector for F♯4 in G Major:
+...0,0,0,0,0,1,0...∣...0,0,0,0,1,0,0,0...∣...0,0,0,0,0,1,0...0
+
+# How to deal with duration?
+Idea: Expand the Vector with Bars of Varying Lengths.
+We could define a duration mapping such as:
+duration_mapping = {
+    'whole': 4,
+    'half': 2,
+    'quarter': 1
+}
+which will be used in our (no longer) one hot vector. Taking the same example as before, if F♯ is a "half":              
+...0,0,0,0,0,2,0...∣...0,0,0,0,1,0,0,0...∣...0,0,0,0,0,1,0...0
+
+
+In summary, the model combines the mathematical understanding of music theory with interactive and feedback-based learning tools. This approach can significantly enhance the speed and depth of musical understanding. We think it could be potentially a better way to represent musical notes, for example better than MIDI values.
+
 
 __Pentagrom__ and __Sistema Solfeo XXI__ was invented by Jaime Iglesias ([Linkedin](https://es.linkedin.com/in/jaimeiglesias/ "Linkedin Jaime Iglesias Álvaro-Gracia") and [Patent](https://patents.google.com/patent/ES2324268B2/en?assignee=jaime+iglesias&oq=jaime+iglesias)), the musician leading this project.  
 Pentagrom allows visualizing all musical notes in an isomorphic, unequivocally, orderly and simple way, which exactly match the way notes are represented in a stave. As simple as it looks like, nobody came before with this "pattern".  
