@@ -9,7 +9,7 @@ These are the fundamental note names. By adding sharps or flats (as determined
 by the key signature) and combining them with the octave number, we can represent 
 any note in the Western musical system as a matrix of 7x3.
 Note names are sorted bottom up, as they would appear in a staff (more about visualization later).
-
+```
     | Flat  | Natural | Sharp |
 -------------------------------
 G   |   1   |    2   |   3    |
@@ -26,7 +26,7 @@ B   |   16  |   17   |  18    |
 -------------------------------
 A   |   X   |   20   |  21    | Ex. X -> A♭
 -------------------------------
-
+```
 
 # Vectorizing
 Note Representation:
