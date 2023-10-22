@@ -23,28 +23,27 @@ sharps and flats).
 Note names are sorted as they would appear in a staff (more about visualization later).
 
 Here we have 3 examples of one note where "Middle C" is C4. For simplicity we are representing
-all notes in the same matrix (4th octave in C Major) with the letter "y".
+all notes in the same matrix (4th octave in C Major) with the letter "X".
 
 ```
      | Flat  | Natural | Sharp |
 -------------------------------
 B4   |   1   |    2   |   3    |
 -------------------------------
-A4   |   y   |    5   |   6    | y -> A♭4
+A4   |   X   |    5   |   6    | x -> A♭4 | y -> (2,1) | position 4
 -------------------------------
 G4   |   7   |    8   |   9    |
 -------------------------------
-F4   |   10  |   11   |   y    | y -> F♯4
+F4   |   10  |   11   |   X    | x -> F♯4 | y -> (4,3) | position 12
 -------------------------------
 E4   |   13  |   14   |  15    |
 -------------------------------
-D4   |   16  |    y   |  18    | y -> D4
+D4   |   16  |    X   |  18    | x -> D4  | y -> (6,2) | position 17
 -------------------------------
 C4   |   19   |   20   |  21   | 
 -------------------------------
 ```
   
-
 
 # Vectorizing
 Note Representation:
