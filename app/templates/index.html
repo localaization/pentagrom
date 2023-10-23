@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pentagrom - Music Matrix Demo</title>
+        <style>
+            .highlight {
+                background-color: yellow;
+            }
+            table {
+                width: 80%; /* Adjust the width as needed */
+                margin: 0 auto; /* Center the table horizontally */
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 10px;
+                text-align: center;
+                border: 1px solid #000;
+                border-radius: 10px; /* Rounded borders */
+            }
+        </style>
+    </head>
+<body>
+    <h1>Pentagrom Music Matrix Demo</h1>
+
+    <form action="/" method="post">
+        <label for="custom_note">Enter a note (eg. A-- in key A- Major):</label>
+        <input type="text" name="custom_note" id="custom_note" placeholder="Enter a note">
+    
+        <label for="key_signature">Select a key signature:</label>
+        <select name="key_signature" id="key_signature">
+            {% for key in key_signatures.keys() %}
+                <option value="{{ key }}">{{ key }}</option>
+            {% endfor %}
+        </select>
+    
+        <input type="submit" value="Submit">
+    </form>
+    
+    <div>
+        <p>Note selected: {{ custom_note }}</p>
+        <p>Key selected: {{ key_signature }}</p>
+    </div>
+
+    {% if matrix %}
+        <table border="1">
+            <tr>
+                <th></th>
+                <th>♭</th>
+                <th>♮</th>
+                <th>♯</th>
+            </tr>
+            {% for row_index, row in matrix|enumerate %}
+                <tr>
+                    <th {% if row_index == position %}class="highlight"{% endif %}>{{ row_indices[row_index] }}</th>
+                    {% for cell_index, cell in row|enumerate %}
+                        <td {% if row_index == position and cell_index == note_position %}class="highlight"{% endif %}>{{ cell }}</td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
+    <div>
+        <h2>Key Signatures and Scales</h2>
+        <ul>
+            <li>C Major / A minor (no sharps or flats)</li>
+            <li>G Major / E minor (1 sharp: F♯)</li>
+            <li>D Major / B minor (2 sharps: F♯, C♯)</li>
+            <li>A Major / F♯ minor (3 sharps: F♯, C♯, G♯)</li>
+            <li>E Major / C♯ minor (4 sharps: F♯, C♯, G♯, D♯)</li>
+            <li>B Major / G♯ minor (5 sharps: F♯, C♯, G♯, D♯, A♯)</li>
+            <li>F♯ Major / D♯ minor (6 sharps: F♯, C♯, G♯, D♯, A♯, E♯)</li>
+            <li>C♯ Major / A♯ minor (7 sharps: F♯, C♯, G♯, D♯, A♯, E♯, B♯)</li>
+            <li>F Major / D minor (1 flat: B♭)</li>
+            <li>B♭ Major / G minor (2 flats: B♭, E♭)</li>
+            <li>E♭ Major / C minor (3 flats: B♭, E♭, A♭)</li>
+            <li>A♭ Major / F minor (4 flats: B♭, E♭, A♭, D♭)</li>
+            <li>D♭ Major / B♭ minor (5 flats: B♭, E♭, A♭, D♭, G♭)</li>
+            <li>G♭ Major / E♭ minor (6 flats: B♭, E♭, A♭, D♭, G♭, C♭)</li>
+            <li>C♭ Major / A♭ minor (7 flats: B♭, E♭, A♭, D♭, G♭, C♭, F♭)</li>
+        </ul>
+    </div>
+</body>
+</html>
