@@ -4,7 +4,9 @@
 
 Pentagrom allows visualizing all musical notes in an isomorphic, unequivocally, orderly and simple way, which exactly match the way notes are represented in a staff. As simple as it looks like, nobody came before with the idea behind it.  
 
-Many papers and documents refer to music transcription, translation and visualization as a hard problem to solve, ML algorithms are sometimes piano roll or midi based, and music has a steep learning rate. We think some of these issues could be solved by combining this "system" and ML.
+Many papers and documents refer to music transcription, translation and visualization as a hard problem to solve, ML algorithms are sometimes piano roll or midi based, and music has a steep learning rate. We think some of these issues could be solved by combining this "system" and ML as well as simplyfing and improving some mathematical operations involving music theory. Some domains that would be applicable might be, as an interface where a note is self described as one position in a matrix (e.g. predicting from a midi code what should be the specific note including alterations and key signatures, or as a "music writter machine" where alterations are predicted while typing), as a one-hot vector for embedings, as a way to represent a richer music vocabulary, as a "music writer machine pretictor".
+
+We believe that it could have great impact in education, where people will be able to learn, play, visualize and understand music in a better way.
 
 # The idea
 
