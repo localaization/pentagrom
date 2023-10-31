@@ -119,13 +119,19 @@ So the complete information (Work in progress):
 Position(i,j)
 
 i = N[note_name]
+
 j = base_notes * (M + Mkey + 2)
+
 Mkey = - base_notes * ((base_notes + key_signature) -1)
 
 We could be handeling more than one note at a time, for simplicity we are doing it for the given example.
+
 base_notes = np.array([0, 0, 0, 1, 0, 0, 0])
+
 M = np.array([0, 0, 0, 1, 0, 0, 0])
+
 key_signature = np.array([0, 0, 0, 1, 0, 0, 0]) # D Mayor
+
 We map the columns from 1 to 3 here, so the number 2 represents the central column and the index in the array represents the row.
 
 Result = [0 0 0 2 0 0 0] -> (4,2)
@@ -136,11 +142,12 @@ Assuming we're dealing with common octaves in Western music (for example from C1
 O = [0, 0, 0, 0, 0, 0, 0, 0]
 
 # Vector Indexing (expanded)
+```
 N = [0, 0, 0, 0, 0, 0, 0]
 M = [0, 0, 0]
 Mkey = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 O = [0, 0, 0, 0, 0, 0, 0, 0]
-
+```
 
 
 # How to deal with duration?
