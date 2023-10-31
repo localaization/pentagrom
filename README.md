@@ -102,12 +102,17 @@ Mkey = {
 Mkeyv = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 Example: 
-F# G major -> Will be mapped to position 11 (within this key, the F# has the position of F) in our matrix, position 12 will hold F## (still in our matrix space).
+F# G major -> Will be mapped to position 11 (within this key, the F# has the position of F) in our matrix, 
+position 12 will hold F## (still in our matrix space).
+
 N = [0, 0, 0, 1, 0, 0, 0]
+
 M = [0, 0, 1]
+
 Mkey = [0, 0, 0, 1, 0, 0, 0]
 
 M will be transformed to:
+
 [0, 0, 0, 1, 0, 0, 0]
 
 So the complete information (Work in progress):
