@@ -148,6 +148,9 @@ N = [0, 0, 0, 0, 0, 0, 0]
 M = [0, 0, 0]
 Mkey = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 O = [0, 0, 0, 0, 0, 0, 0, 0]
+
+Our one-hot vector could be:
+[0, 0, 0, 0, 0, 0, 0] | [0, 0, 0] | [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] | [0, 0, 0, 0, 0, 0, 0, 0]
 ```
 
 
@@ -171,6 +174,46 @@ which will be used in our (no longer) one hot vector. Taking the same example as
 ```
 
 In summary, the model combines the mathematical understanding of music theory with interactive and feedback-based learning tools. This approach can significantly enhance the speed and depth of musical understanding. We think it could be potentially a better way to represent musical notes, for example better than MIDI values.
+
+# Code
+We can represent a note as an integer value, a position in a 2D matrix (i, j), a position in a 3D matrix where x and y represent the 7x3 and z the octave. Note that common visualization would be to pile up the 7x3 matrix (as in a piano or piano roll), but piling them up in the z-axis can give as a perfect pattern and a way to process all notes at the same time.
+
+Basic formulas using mostly lookup tables
+```
+def note_row(note_name):
+    # TODO Check whether is better to use N.get(note_name) -> This return None
+    # if value does not exist.
+    i = N[note_name]
+    return i
+
+def note_column(note_name, alteration, keysig = "C major"):
+    # TODO Handle exceptions (j < 1 | j > 2.)
+    Mkeyvalue = Mkey[keysig][N[note_name]] - 1 
+    j = M[alteration] + 2 + Mkeyvalue
+    return j
+```
+
+Basic formulas using arrays (it can process several notes at a time)
+```
+def note_row(note_array):
+    # TODO Check whether is better to use N.get(note_name) -> This return None
+    # if value does not exist.
+    i = N[note_name]
+    return i
+
+def note_column(note_name, alteration, keysig = "C major"):
+    # TODO Handle exceptions (j < 1 | j > 2.)
+    Mkeyvalue = Mkey[keysig][N[note_name]] - 1 
+    j = M[alteration] + 2 + Mkeyvalue
+    return j
+
+We can batch processing all notes of a single octave at a time using arrays as we did in the example at the beggining of this document.
+i = index of the note in the array + 1 (if 0 base index)
+And "j" as in:
+
+Mkey = - base_notes * ((base_notes + key_signature) -1)
+j = base_notes * (M + Mkey + 2)
+```
 
 # Visualization
 
