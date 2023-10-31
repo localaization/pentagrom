@@ -47,52 +47,88 @@ D4   |   16  |    X   |  18    | x -> D4  | y -> (6,2) | position 17
 C4   |   19   |   20   |  21   | 
 -------------------------------
 ```
-  
+
 
 # Vectorizing
-Note Representation:
-For any note in its natural, sharp, or flat form, we can set the corresponding element of the vector to 1, and all other elements to 0 (one hot).
+Given the note name, alteration (up to double flat and sharp), key signature and octave, all information can be compressed to a single number 
+improving other systems such as MIDI since the number maps to a single and univocally note yet preserving all properties and style.
+Example:
 
-For example, for the note F♯:
-0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+MIDI 61 -> C#4/Db4
+Pentagrom 80 -> 21*4 -> C#4
+Pentagrom 64 -> 16*4 -> Db4
 
-For example, for the note A♭:
-0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+## Note name
+N as the note position where N ∈ {C, D, E, F, G, A, B} in this order, without alterations, octave neither key signature (default C major).
+Note: We start from bottom up as in a staff.
+N = {"C": 1, "D": 2, "E": 3, "F": 4, "G": 5, "A": 6, "B": 7}
+Nv = [0,0,0,0,0,0,0]
+Example: C4 -> [1, 0, 0, 0, 0, 0, 0]
+
+## Note alteration
+M = {"--":-2, "-":-1, "": 0, "#": 1, "##": 2} -> Before applying any key signature. We can compress this to a 3 values once the key signature have been applied:
+M = {"-":-1, "": 0, "#": 1}
+Example: C4# -> [0, 0, 1]
+
+## Key signature
+Let's take the 7 main diatonic key signatures based on the natural major scales (C, D, E, F, G, A, B) and their relative minor keys. We can represent each of these major and minor keys with a one-hot encoded value (in this case if there are no flats or sharps as in C Major or A minor, all values will be 0)
+It will hold 15 posible values representing all key signatures. This will act as a "filter" positioning the note in the corresponding place in the "matrix", 
+this way we handle up to double sharps and flats, aply the filter and have the note in our "matrix space".
+Mkey = {
+    "C major": [0, 0, 0, 0, 0, 0, 0],
+    "G major": [0, 0, 0, 1, 0, 0, 0],
+    "D major": [1, 0, 0, 1, 0, 0, 0],
+    "A major": [1, 0, 0, 1, 1, 0, 0],
+    "E major": [1, 1, 0, 1, 1, 0, 0],
+    "B major": [1, 1, 0, 1, 1, 1, 0],
+    "F# major": [1, 1, 1, 1, 1, 1, 0],
+    "C# major": [1, 1, 1, 1, 1, 1, 1],
+    "F major": [0, 0, 0, 0, 0, 0, -1],
+    "Bb major": [0, 0, -1, 0, 0, 0, -1],
+    "Eb major": [0, 0, -1, 0, 0, -1, -1],
+    "Ab major": [0, -1, -1, 0, 0, -1, -1],
+    "Db major": [0, 0, -1, -1, -1, -1, -1],
+    "Gb major": [0, -1, -1, -1, -1, -1, -1],
+    "Cb major": [-1, -1, -1, -1, -1, -1, -1]
+}
+Mkeyv = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Example: 
+F# G major -> Will be mapped to position 11 (within this key, the F# has the position of F) in our matrix, position 12 will hold F## (still in our matrix space).
+N = [0, 0, 0, 1, 0, 0, 0]
+M = [0, 0, 1]
+Mkey = [0, 0, 0, 1, 0, 0, 0]
+
+M will be transformed to:
+[0, 0, 0, 1, 0, 0, 0]
+
+So the complete information (Work in progress):
+Position(i,j)
+
+i = N[note_name]
+j = base_notes * (M + Mkey + 2)
+Mkey = - base_notes * ((base_notes + key_signature) -1)
+
+We could be handeling more than one note at a time, for simplicity we are doing it for the given example.
+base_notes = np.array([0, 0, 0, 1, 0, 0, 0])
+M = np.array([0, 0, 0, 1, 0, 0, 0])
+key_signature = np.array([0, 0, 0, 1, 0, 0, 0]) # D Mayor
+We map the columns from 1 to 3 here, so the number 2 represents the central column and the index in the array represents the row.
+
+Result = [0 0 0 2 0 0 0] -> (4,2)
 
 ## Include Octaves
 
 Assuming we're dealing with common octaves in Western music (for example from C1 to C8), that's 8 different octaves. We can one-hot encode these, adding 8 elements to our vector, where each position corresponds to one of these octaves.
-
-The updated vector length is now:
-
-21(notes) + 8(octaves) = 29.
-
-## Include Key Signatures
-
-Let's take the 7 main diatonic key signatures based on the natural major scales (C, D, E, F, G, A, B) and their relative minor keys. We can represent each of these major and minor keys with a one-hot encoded value (in this case if there are no flats or sharps as in C Major or A minor, all values will be 0). This is to be discussed.
-
-That's 7(majorkeys) + 7(minorkeys) = 14 key different signatures.
-The updated vector length is now:
-
-29(notes and octaves) + 14(keysignatures) = 43
+O = [0, 0, 0, 0, 0, 0, 0, 0]
 
 # Vector Indexing (expanded)
+N = [0, 0, 0, 0, 0, 0, 0]
+M = [0, 0, 0]
+Mkey = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+O = [0, 0, 0, 0, 0, 0, 0, 0]
 
-```
-0-20:    Note matrix as before
-21-28:   Octaves (C1 to C8)
-29-42:   Key signatures (C Major, C Minor, D Major, ... B Major, B Minor)
-```
 
-**Example**
-For a note F♯ in the octave 4 and in the key of G Major:
-
-The vector will have a 1 at index 12 (for the F♯ note), a 1 at index 24 (for the 4th octave), and a 1 at index 34 (for G Major). All other elements will be set to 0.
-Example Vector for F♯4 in G Major:
-
-```
-...0,0,0,0,0,1,0...∣...0,0,0,0,1,0,0,0...∣...0,0,0,0,0,1,0...0
-```
 
 # How to deal with duration?
 
