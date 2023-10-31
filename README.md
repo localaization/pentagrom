@@ -215,18 +215,6 @@ def note_column(note_name, alteration, keysig = "C major"):
 
 Basic formulas using arrays (it can process several notes at a time)
 ```
-def note_row(note_array):
-    # TODO Check whether is better to use N.get(note_name) -> This return None
-    # if value does not exist.
-    i = N[note_name]
-    return i
-
-def note_column(note_name, alteration, keysig = "C major"):
-    # TODO Handle exceptions (j < 1 | j > 2.)
-    Mkeyvalue = Mkey[keysig][N[note_name]] - 1 
-    j = M[alteration] + 2 + Mkeyvalue
-    return j
-
 We can batch processing all notes of a single octave at a time using arrays as we did in the example at the beggining of this document.
 i = index of the note in the array + 1 (if 0 base index)
 And "j" as in:
