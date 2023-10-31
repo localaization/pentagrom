@@ -60,14 +60,20 @@ Pentagrom 64 -> 16*4 -> Db4
 
 ## Note name
 N as the note position where N ∈ {C, D, E, F, G, A, B} in this order, without alterations, octave neither key signature (default C major).
+
 Note: We start from bottom up as in a staff.
+
 N = {"C": 1, "D": 2, "E": 3, "F": 4, "G": 5, "A": 6, "B": 7}
+
 Nv = [0,0,0,0,0,0,0]
+
 Example: C4 -> [1, 0, 0, 0, 0, 0, 0]
 
 ## Note alteration
 M = {"--":-2, "-":-1, "": 0, "#": 1, "##": 2} -> Before applying any key signature. We can compress this to a 3 values once the key signature have been applied:
+
 M = {"-":-1, "": 0, "#": 1}
+
 Example: C4# -> [0, 0, 1]
 
 ## Key signature
