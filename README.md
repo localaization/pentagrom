@@ -64,6 +64,8 @@ For the key of E-flat Major:
 Note E is plotted at a deviation of +0.5 (since E-flat Major has E♭).
 Note E♭ is plotted at a deviation of 0.
 Note E♯ is plotted at a deviation of +0.5.
+
+Octaves are just random for the example.
 ```
 ![3D chart representation](https://github.com/localaization/pentagrom/blob/master/assets/3d-pentagrom-representation.jpg)
 
