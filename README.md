@@ -80,6 +80,7 @@ Example: C4# -> [0, 0, 1]
 Let's take the 7 main diatonic key signatures based on the natural major scales (C, D, E, F, G, A, B) and their relative minor keys. We can represent each of these major and minor keys with a one-hot encoded value (in this case if there are no flats or sharps as in C Major or A minor, all values will be 0)
 It will hold 15 posible values representing all key signatures. This will act as a "filter" positioning the note in the corresponding place in the "matrix", 
 this way we handle up to double sharps and flats, aply the filter and have the note in our "matrix space".
+```
 Mkey = {
     "C major": [0, 0, 0, 0, 0, 0, 0],
     "G major": [0, 0, 0, 1, 0, 0, 0],
@@ -97,6 +98,7 @@ Mkey = {
     "Gb major": [0, -1, -1, -1, -1, -1, -1],
     "Cb major": [-1, -1, -1, -1, -1, -1, -1]
 }
+```
 Mkeyv = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 Example: 
