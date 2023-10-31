@@ -1,6 +1,8 @@
-# Pentagrom - A new music system and visualization tool
+# Pentagrom - A new music system, encoder and visualization tool
 
-**Pentagrom** is a research project exploring the role of Machine Learning based on the work done back in 2008 by Jaime Iglesias ([Linkedin](https://es.linkedin.com/in/jaimeiglesias/ "Linkedin Jaime Iglesias Álvaro-Gracia") and [Patent](https://patents.google.com/patent/ES2324268B2/en?assignee=jaime+iglesias&oq=jaime+iglesias)), the musician leading this project. 
+**Pentagrom** is a research project exploring the role of Machine Learning based on the work done back in 2008 by Jaime Iglesias ([Linkedin](https://es.linkedin.com/in/jaimeiglesias/ "Linkedin Jaime Iglesias Álvaro-Gracia") and [Patent](https://patents.google.com/patent/ES2324268B2/en?assignee=jaime+iglesias&oq=jaime+iglesias)), the musician leading this project.
+
+We would like to develope and open source the code, we are in this process.
 
 Pentagrom allows visualizing all musical notes in an isomorphic, unequivocally, orderly and simple way, which exactly match the way notes are represented in a staff. As simple as it looks like, nobody came before with the idea behind it.  
 
