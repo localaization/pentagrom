@@ -47,7 +47,24 @@ D4   |   16  |    X   |  18    | x -> D4  | y -> (6,2) | position 17
 C4   |   19   |   20   |  21   | 
 -------------------------------
 ```
+```
+Representation of 9 notes in different key signatures
 
+C Major:
+Note C is plotted at a deviation of 0.
+Note C# is plotted at a deviation of +0.5.
+Note C♭ is plotted at a deviation of -0.5
+
+For the key of G Major:
+Note F is plotted at a deviation of -0.5 (since G Major has F#).
+Note F# is plotted at a deviation of 0.
+Note F♭ is plotted at a deviation of -0.5.
+
+For the key of E-flat Major:
+Note E is plotted at a deviation of +0.5 (since E-flat Major has E♭).
+Note E♭ is plotted at a deviation of 0.
+Note E♯ is plotted at a deviation of +0.5.
+```
 ![3D chart representation](https://github.com/localaization/pentagrom/blob/master/assets/3d-pentagrom-representation.jpg)
 
 
