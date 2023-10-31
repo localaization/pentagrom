@@ -53,11 +53,11 @@ C4   |   19   |   20   |  21   |
 Given the note name, alteration (up to double flat and sharp), key signature and octave, all information can be compressed to a single number 
 improving other systems such as MIDI since the number maps to a single and univocally note yet preserving all properties and style.
 Example:
-
+```
 MIDI 61 -> C#4/Db4
 Pentagrom 80 -> 21*4 -> C#4
 Pentagrom 64 -> 16*4 -> Db4
-
+```
 ## Note name
 N as the note position where N ∈ {C, D, E, F, G, A, B} in this order, without alterations, octave neither key signature (default C major).
 
