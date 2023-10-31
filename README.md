@@ -173,7 +173,7 @@ O = [0, 0, 0, 0, 0, 0, 0, 0]
 Our one-hot vector could be:
 [0, 0, 0, 0, 0, 0, 0] | [0, 0, 0] | [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] | [0, 0, 0, 0, 0, 0, 0, 0]
 ```
-
+Bypassing octave and keystring will lead to a much compress format (but we might loose some crucial information about the musician style)
 
 # How to deal with duration?
 
