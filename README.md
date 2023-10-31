@@ -70,7 +70,7 @@ Nv = [0,0,0,0,0,0,0]
 Example: C4 -> [1, 0, 0, 0, 0, 0, 0]
 
 ## Note alteration
-M = {"--":-2, "-":-1, "": 0, "#": 1, "##": 2} -> Before applying any key signature. We can compress this to a 3 values once the key signature have been applied:
+M = {"--":-2, "-":-1, "": 0, "#": 1, "##": 2} -> Before applying any key signature. We can compress this to a 3 values once the key signature has been applied:
 
 M = {"-":-1, "": 0, "#": 1}
 
