@@ -48,6 +48,8 @@ C4   |   19   |   20   |  21   |
 -------------------------------
 ```
 
+![3D chart representation](https://github.com/localaization/pentagrom/blob/master/assets/3d-pentagrom-representation.jpg)
+
 
 # Vectorizing
 Given the note name, alteration (up to double flat and sharp), key signature and octave, all information can be compressed to a single number 
