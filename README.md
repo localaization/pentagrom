@@ -139,6 +139,7 @@ Result = [0 0 0 2 0 0 0] -> (4,2)
 ## Include Octaves
 
 Assuming we're dealing with common octaves in Western music (for example from C1 to C8), that's 8 different octaves. We can one-hot encode these, adding 8 elements to our vector, where each position corresponds to one of these octaves.
+
 O = [0, 0, 0, 0, 0, 0, 0, 0]
 
 # Vector Indexing (expanded)
