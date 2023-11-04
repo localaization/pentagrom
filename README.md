@@ -69,6 +69,8 @@ Note E♯ is plotted at a deviation of +0.5.
 ```
 Note: Octaves are just random for the example.
 ![3D chart representation](https://github.com/localaization/pentagrom/blob/master/assets/3d-pentagrom-representation.jpg)
+![Chord representation](https://github.com/localaization/pentagrom/blob/master/assets/3chords.png)
+
 
 
 # Vectorizing
