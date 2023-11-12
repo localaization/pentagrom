@@ -6,11 +6,14 @@ Please take this writing with a grain of salt, since it is an ongoing project an
 
 Pentagrom allows visualizing all musical notes in an isomorphic, unequivocal, orderly, and simple way, which exactly matches the way notes are represented in a staff. As simple as it looks like, nobody came before with the idea behind it.  
 
-Many papers and documents refer to music transcription, translation and visualization as a hard problem to solve, ML algorithms are sometimes piano roll or midi based, and music has a steep learning rate. We think some of these issues could be solved by combining this "system" and ML as well as simplyfing and improving some mathematical operations[^1] involving music theory and batch notes processing. Some domains that would be applicable might be, as an interface/controler where a note is self described as one position in a matrix, as a one-hot vector for embedings, as a way to represent a richer music vocabulary, CNN as filters and inputs, as a "music writer machine pretictor".
+ML algorithms are mostly based on 12 notes representation (using MIDI codes), and we think using this "system" could improve many algorithms[^1] and models[^2][^3][^4]. Some domains that would be applicable might be, as a one-hot vector for embedings, as a way to represent a richer music vocabulary, CNN as filters and inputs, as a "music writer machine pretictor", an interface/controler where a note is self described as one position in a matrix, yet preserving all the information.
 
 We believe that it could have great impact in education, where people will be able to learn, play, visualize and understand music in a better way.
 
 [^1]: [note2vec](https://github.com/philhchen/note2vec/blob/master/naivemodel/note2vec.ipynb)
+[^2]: [MuseMorphose: Full-Song and Fine-Grained Piano Music Style Transfer with One Transformer VAE](https://arxiv.org/pdf/2105.04090.pdf)
+[^3]: [Pop Music Transformer: Beat-based Modeling and Generation of Expressive Pop Piano Compositions](https://arxiv.org/pdf/2002.00212.pdf)
+[^4]: [Explicitly Conditioned Melody Generation: A Case Study with Interdependent RNNs](https://arxiv.org/pdf/1907.05208.pdf)
 
 # The idea
 
