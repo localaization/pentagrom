@@ -203,6 +203,7 @@ which will be used in our (no longer) one hot vector. Taking the same example as
 In summary, the model combines the mathematical understanding of music theory with interactive and feedback-based learning tools. This approach can significantly enhance the speed and depth of musical understanding. We think it could be potentially a better way to represent musical notes, for example better than MIDI values.
 
 # Code
+To be reviewed.
 We can represent a note as an integer value, a position in a 2D matrix (i, j), a position in a 3D matrix where x and y represent the 7x3 and z the octave. Note that common visualization would be to pile up the 7x3 matrix (as in a piano or piano roll), but piling them up in the z-axis can give as a perfect pattern and a way to process all notes at the same time.
 
 Basic formulas using mostly lookup tables
