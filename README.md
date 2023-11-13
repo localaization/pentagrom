@@ -2,11 +2,11 @@
 
 Please take this writing with a grain of salt, since it is an ongoing project and we are taking notes here to sort them out later.
 
-**Pentagrom** is a research project exploring the role of Machine/Deep Learning based on the work done back in 2008 by Jaime Iglesias ([Linkedin](https://es.linkedin.com/in/jaimeiglesias/ "Linkedin Jaime Iglesias Álvaro-Gracia") and [Patent](https://patents.google.com/patent/ES2324268B2/en?assignee=jaime+iglesias&oq=jaime+iglesias)), the musician leading this project.
+**Pentagrom** is a research project exploring the role of Machine Learning based on the work done back in 2008 by Jaime Iglesias ([Linkedin](https://es.linkedin.com/in/jaimeiglesias/ "Linkedin Jaime Iglesias Álvaro-Gracia") and [Patent](https://patents.google.com/patent/ES2324268B2/en?assignee=jaime+iglesias&oq=jaime+iglesias)), the musician leading this project.
 
 Pentagrom allows visualizing all musical notes in an isomorphic, unequivocal, orderly, and simple way, which exactly matches the way notes are represented in a staff. As simple as it looks like, nobody came before with the idea behind it.  
 
-DL algorithms are mostly based on 12 notes representation (using MIDI codes), and we think using this "system" could improve many algorithms[^1] and models[^2][^3][^4] with a richer data representation and cheaper vector operations. Some use cases that would be applicable might be, as a "one-hot" vector for embedings, as a way to represent a richer music data and replacement for MIDI codes based models, filters and inputs in CNN, as a "music writer machine pretictor" for other models, an interface/controler where a note is self described as one position in a matrix, yet preserving all the information.
+ML algorithms are mostly based on 12 notes representation (using MIDI codes), and we think using this "system" could improve many algorithms[^1] and models[^2][^3][^4] with a richer data representation and cheaper vector operations. Some use cases that would be applicable might be, as a "one-hot" vector for embedings, as a way to represent a richer music data and replacement for MIDI codes based models, filters and inputs in CNN, as a "music writer machine pretictor" for other models, an interface/controler where a note is self described as one position in a matrix, yet preserving all the information.
 
 We believe that it could have great impact in music education, where people will be able to learn, play, visualize and understand music in a better and personalized way.
 
