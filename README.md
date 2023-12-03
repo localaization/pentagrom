@@ -2,7 +2,7 @@
 
 Please take this writing with a grain of salt, since it is an ongoing project and we are taking notes here to sort them out later.
 
-**Pentagrom** is a research project exploring the role of Machine Learning based on the work done back in 2008 by Jaime Iglesias ([Linkedin](https://es.linkedin.com/in/jaimeiglesias/ "Linkedin Jaime Iglesias Álvaro-Gracia") and [Patent](https://patents.google.com/patent/ES2324268B2/en?assignee=jaime+iglesias&oq=jaime+iglesias)), the musician leading this project.
+**Pentagrom** is a research [project](https://github.com/users/localaization/projects/1/views/1) exploring the role of Machine Learning based on the work done back in 2008 by Jaime Iglesias ([Linkedin](https://es.linkedin.com/in/jaimeiglesias/ "Linkedin Jaime Iglesias Álvaro-Gracia") and [Patent](https://patents.google.com/patent/ES2324268B2/en?assignee=jaime+iglesias&oq=jaime+iglesias)), the musician leading this project.
 
 Pentagrom is a new music symbolic representation (we called it Solfeo XXI) that allows visualizing all musical notes in an isomorphic, unequivocal, orderly, and simple way, which exactly matches the way notes are represented in a staff. As simple as it looks like, nobody came before with the idea behind it.  
 
