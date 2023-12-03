@@ -6,7 +6,7 @@ Please take this writing with a grain of salt, since it is an ongoing project an
 
 Pentagrom is a new music symbolic representation (we called it Solfeo XXI) that allows visualizing all musical notes in an isomorphic, unequivocal, orderly, and simple way, which exactly matches the way notes are represented in a staff. As simple as it looks like, nobody came before with the idea behind it.  
 
-ML algorithms are mostly based on 12 notes representation (using MIDI codes), and we think using this "system" could improve some algorithms[^1] as in Pitch range vector descriptors or Pitch Accuracy metrics, and models[^2][^3][^4] with a richer data representation and cheaper vector operations. Some use cases that would be applicable might be, as a "one-hot" vector for embedings, as a way to represent a richer music data and replacement for MIDI codes based models, filters and inputs in CNN, as a "music writer machine pretictor" for other models, an interface/controler where a note is self described as one position in a matrix, yet preserving all the information.
+ML algorithms are mostly based on 12 notes representation (using MIDI codes), and we think using this "system" could improve some algorithms[^1] as in Pitch range vector descriptors or Pitch Accuracy metrics, and models[^2][^3][^4] with a richer data representation[^5] and cheaper vector operations[^6]. Some use cases that would be applicable might be, as a "one-hot" vector for embedings, as a way to represent a richer music data and replacement for MIDI codes based models, filters and inputs in CNN, as a "music writer machine pretictor" for other models, an interface/controler where a note is self described as one position in a matrix, yet preserving all the information.
 
 We believe that it could have great impact in music education, where people will be able to learn, play, visualize and understand music in a better and personalized way.
 
@@ -14,6 +14,9 @@ We believe that it could have great impact in music education, where people will
 [^2]: [MuseMorphose: Full-Song and Fine-Grained Piano Music Style Transfer with One Transformer VAE](https://arxiv.org/pdf/2105.04090.pdf)
 [^3]: [Pop Music Transformer: Beat-based Modeling and Generation of Expressive Pop Piano Compositions](https://arxiv.org/pdf/2002.00212.pdf)
 [^4]: [Explicitly Conditioned Melody Generation: A Case Study with Interdependent RNNs](https://arxiv.org/pdf/1907.05208.pdf)
+[^5]: [PDF - Score and Performance Features for Rendering
+Expressive Music Performances](https://music-encoding.org/conference/abstracts/abstracts_mec2019/Dasaem%20Jeong%20Music%20Encoding%20Conference%202019.pdf)
+[^6]: [music21](https://web.mit.edu/music21/)
 
 # The idea
 
