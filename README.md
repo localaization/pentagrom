@@ -10,7 +10,7 @@ ML algorithms are mostly based on 12 notes representation (using MIDI codes), an
 
 We believe that it could have great impact in music education, where people will be able to learn, play, visualize and understand music in a better and personalized way.
 
-[^1]: [note2vec](https://github.com/philhchen/note2vec/blob/master/naivemodel/note2vec.ipynb)
+[^1]: [PDF - A Comprehensive Survey on Deep Music Generation: Multi-level Representations, Algorithms, Evaluations, and Future Directions](https://arxiv.org/pdf/2011.06801.pdf)
 [^2]: [MuseMorphose: Full-Song and Fine-Grained Piano Music Style Transfer with One Transformer VAE](https://arxiv.org/pdf/2105.04090.pdf)
 [^3]: [Pop Music Transformer: Beat-based Modeling and Generation of Expressive Pop Piano Compositions](https://arxiv.org/pdf/2002.00212.pdf)
 [^4]: [Explicitly Conditioned Melody Generation: A Case Study with Interdependent RNNs](https://arxiv.org/pdf/1907.05208.pdf)
