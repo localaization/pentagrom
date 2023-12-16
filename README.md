@@ -6,11 +6,13 @@ Please take this writing with a grain of salt, since it is an ongoing project an
 
 Pentagrom is a new music symbolic representation (we called it Solfeo XXI) that allows visualizing all musical notes in an isomorphic, unequivocal, orderly, and simple way, which exactly matches the way notes are represented in a staff. As "simple"[^8] as it looks like, nobody came before with the idea behind it.  
 
-ML algorithms are mostly based on 12 notes representation (using MIDI codes), and we think using this "system" could improve some algorithms[^1] as in Pitch range vector descriptors or Pitch Accuracy metrics, and models[^2][^3][^4] with a richer data representation[^5], cheaper vector operations[^6], Error detection and realignment[^7]. Some use cases that would be applicable might be, as a "one-hot" vector for embedings, as a way to represent a richer music data and replacement for MIDI codes based models, filters and inputs in CNN, as a "music writer machine pretictor" for other models, an interface/controler where a note is self described as one position in a matrix, yet preserving all the information.
+ML algorithms are mostly based on 12 notes representation (using MIDI codes), and we think using this "system" could improve some algorithms[^1],  as in Pitch range vector descriptors or Pitch Accuracy metrics, and models[^2][^3][^4] with a richer data representation[^5], cheaper vector operations[^6], Error detection and realignment[^7]. Some use cases that would be applicable might be, as a "one-hot" vector for embedings, as a way to represent a richer music data and replacement for MIDI codes based models, filters and inputs in CNN, as a "music writer machine pretictor" for other models, an interface/controler where a note is self described as one position in a matrix, yet preserving all the information.
 
 We believe that it could have great impact in music education, where people will be able to learn, play, visualize and understand music in a better and personalized way.
 
-[^1]: [PDF - A Comprehensive Survey on Deep Music Generation: Multi-level Representations, Algorithms, Evaluations, and Future Directions](https://arxiv.org/pdf/2011.06801.pdf)
+[^1]: Mathematical properties, just ideas here to explore and check: Self-similarity, Affine-space, Ring homomorphism, music transposition, 
+among others could help.
+[PDF - A Comprehensive Survey on Deep Music Generation: Multi-level Representations, Algorithms, Evaluations, and Future Directions](https://arxiv.org/pdf/2011.06801.pdf)
 [^2]: [MuseMorphose: Full-Song and Fine-Grained Piano Music Style Transfer with One Transformer VAE](https://arxiv.org/pdf/2105.04090.pdf)
 [^3]: [Pop Music Transformer: Beat-based Modeling and Generation of Expressive Pop Piano Compositions](https://arxiv.org/pdf/2002.00212.pdf)
 [^4]: [Explicitly Conditioned Melody Generation: A Case Study with Interdependent RNNs](https://arxiv.org/pdf/1907.05208.pdf)
