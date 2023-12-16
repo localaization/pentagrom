@@ -4,13 +4,15 @@ Please take this writing with a grain of salt, since it is an ongoing project an
 
 **Pentagrom** is a research [project](https://github.com/users/localaization/projects/1/views/1) exploring the role of Machine Learning based on the work done back in 2008 by Jaime Iglesias ([Linkedin](https://es.linkedin.com/in/jaimeiglesias/ "Linkedin Jaime Iglesias Álvaro-Gracia") and [Patent](https://patents.google.com/patent/ES2324268B2/en?assignee=jaime+iglesias&oq=jaime+iglesias)), the musician leading this project.
 
-Pentagrom is a new music symbolic representation (we called it Solfeo XXI) that allows visualizing all musical notes in an isomorphic, unequivocal, orderly, and simple way, which exactly matches the way notes are represented in a staff. As simple as it looks like, nobody came before with the idea behind it.  
+Pentagrom is a new music symbolic representation (we called it Solfeo XXI) that allows visualizing all musical notes in an isomorphic, unequivocal, orderly, and simple way, which exactly matches the way notes are represented in a staff. As "simple"[^8] as it looks like, nobody came before with the idea behind it.  
 
-ML algorithms are mostly based on 12 notes representation (using MIDI codes), and we think using this "system" could improve some algorithms[^1] as in Pitch range vector descriptors or Pitch Accuracy metrics, and models[^2][^3][^4] with a richer data representation[^5], cheaper vector operations[^6], Error detection and realignment[^7]. Some use cases that would be applicable might be, as a "one-hot" vector for embedings, as a way to represent a richer music data and replacement for MIDI codes based models, filters and inputs in CNN, as a "music writer machine pretictor" for other models, an interface/controler where a note is self described as one position in a matrix, yet preserving all the information.
+ML algorithms are mostly based on 12 notes representation (using MIDI codes), and we think using this "system" could improve some algorithms[^1],  as in Pitch range vector descriptors or Pitch Accuracy metrics, and models[^2][^3][^4] with a richer data representation[^5], cheaper vector operations[^6], Error detection and realignment[^7]. Some use cases that would be applicable might be, as a "one-hot" vector for embedings, as a way to represent a richer music data and replacement for MIDI codes based models, filters and inputs in CNN, as a "music writer machine pretictor" for other models, an interface/controler where a note is self described as one position in a matrix, yet preserving all the information.
 
 We believe that it could have great impact in music education, where people will be able to learn, play, visualize and understand music in a better and personalized way.
 
-[^1]: [PDF - A Comprehensive Survey on Deep Music Generation: Multi-level Representations, Algorithms, Evaluations, and Future Directions](https://arxiv.org/pdf/2011.06801.pdf)
+[^1]: Mathematical properties, just ideas here to explore and check: Self-similarity, Affine-space, Ring homomorphism, music transposition, 
+among others could help.
+[PDF - A Comprehensive Survey on Deep Music Generation: Multi-level Representations, Algorithms, Evaluations, and Future Directions](https://arxiv.org/pdf/2011.06801.pdf)
 [^2]: [MuseMorphose: Full-Song and Fine-Grained Piano Music Style Transfer with One Transformer VAE](https://arxiv.org/pdf/2105.04090.pdf)
 [^3]: [Pop Music Transformer: Beat-based Modeling and Generation of Expressive Pop Piano Compositions](https://arxiv.org/pdf/2002.00212.pdf)
 [^4]: [Explicitly Conditioned Melody Generation: A Case Study with Interdependent RNNs](https://arxiv.org/pdf/1907.05208.pdf)
@@ -18,6 +20,7 @@ We believe that it could have great impact in music education, where people will
 Expressive Music Performances](https://music-encoding.org/conference/abstracts/abstracts_mec2019/Dasaem%20Jeong%20Music%20Encoding%20Conference%202019.pdf)
 [^6]: [music21](https://web.mit.edu/music21/)
 [^7]: [PDF - Error detection and realigment](https://eita-nakamura.github.io/articles/EN_etal_ErrorDetectionAndRealignment_ISMIR2017.pdf)
+[^8]: [PDF - Geometrical Approximations to the Structure of Musical Pitch](https://github.com/localaization/pentagrom/blob/master/docs/11%20(1982)%20Shepard%20PsychologicalReview.pdf)
 
 
 # The idea
