@@ -39,7 +39,7 @@ Note names are sorted as they would appear in a staff (more about visualization 
 Here we have 3 examples of one note where "Middle C" is C4. For simplicity we are representing
 all notes in the same matrix (4th octave in C Major) with the letter "X".
 
-```
+```text
      | Flat  | Natural | Sharp |
 -------------------------------
 B4   |   1   |    2   |   3    |
@@ -57,9 +57,10 @@ D4   |   16  |    X   |  18    | x -> D4  | y -> (6,2) | position 17
 C4   |   19   |   20   |  21   | 
 -------------------------------
 ```
-```
+
 Representation of 9 notes in different key signatures
 
+```text
 C Major:
 Note C is plotted at a deviation of 0.
 Note C# is plotted at a deviation of +0.5.
@@ -75,22 +76,25 @@ Note E is plotted at a deviation of +0.5 (since E-flat Major has E♭).
 Note E♭ is plotted at a deviation of 0.
 Note E♯ is plotted at a deviation of +0.5.
 ```
+
 Note: Octaves are just random for the example.
 ![3D chart representation](https://github.com/localaization/pentagrom/blob/master/assets/3d-pentagrom-representation.jpg)
 ![Chord representation](https://github.com/localaization/pentagrom/blob/master/assets/3chords.png)
 
+## Vectorizing
 
-
-# Vectorizing
 Given the note name, alteration (up to double flat and sharp), key signature and octave, all information can be compressed to a single number 
 improving other systems such as MIDI since the number maps to a single and univocally note yet preserving all properties and style.
 Example:
-```
+
+```text
 MIDI 61 -> C#4/Db4
 Pentagrom 80 -> 21*4 -> C#4
 Pentagrom 64 -> 16*4 -> Db4
 ```
+
 ## Note name
+
 N as the note position where N ∈ {C, D, E, F, G, A, B} in this order, without alterations, octave neither key signature (default C major).
 
 Note: We start from bottom up as in a staff.
@@ -102,17 +106,19 @@ Nv = [0,0,0,0,0,0,0]
 Example: C4 -> [1, 0, 0, 0, 0, 0, 0]
 
 ## Note alteration
+
 M = {"--":-2, "-":-1, "": 0, "#": 1, "##": 2} -> Before applying any key signature. We can compress this to a 3 values once the key signature has been applied:
 
 M = {"-":-1, "": 0, "#": 1}
-
 Example: C4# -> [0, 0, 1]
 
 ## Key signature
+
 Let's take the 7 main diatonic key signatures based on the natural major scales (C, D, E, F, G, A, B) and their relative minor keys. We can represent each of these major and minor keys with a one-hot encoded value (in this case if there are no flats or sharps as in C Major or A minor, all values will be 0)
-It will hold 15 posible values representing all key signatures. This will act as a "filter" positioning the note in the corresponding place in the "matrix", 
+It will hold 15 posible values representing all key signatures. This will act as a "filter" positioning the note in the corresponding place in the "matrix",
 this way we handle up to double sharps and flats, aply the filter and have the note in our "matrix space".
-```
+
+```text
 Mkey = {
     "C major": [0, 0, 0, 0, 0, 0, 0],
     "G major": [0, 0, 0, 1, 0, 0, 0],
@@ -130,8 +136,9 @@ Mkey = {
     "Gb major": [0, -1, -1, -1, -1, -1, -1],
     "Cb major": [-1, -1, -1, -1, -1, -1, -1]
 }
-```
+
 Mkeyv = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+```
 
 Example: 
 F# G major -> Will be mapped to position 11 (within this key, the F# has the position of F) in our matrix, 
@@ -174,8 +181,9 @@ Assuming we're dealing with common octaves in Western music (for example from C1
 
 O = [0, 0, 0, 0, 0, 0, 0, 0]
 
-# Vector Indexing (expanded)
-```
+## Vector Indexing (expanded)
+
+```text
 N = [0, 0, 0, 0, 0, 0, 0]
 M = [0, 0, 0]
 Mkey = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
@@ -184,14 +192,15 @@ O = [0, 0, 0, 0, 0, 0, 0, 0]
 Our one-hot vector could be:
 [0, 0, 0, 0, 0, 0, 0] | [0, 0, 0] | [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] | [0, 0, 0, 0, 0, 0, 0, 0]
 ```
+
 Bypassing octave and keystring will lead to a much compress format (but we might loose some crucial information about the musician style)
 
-# How to deal with duration?
+## How to deal with duration?
 
 Idea: Expand the Vector with Bars of Varying Lengths.
 We could define a duration mapping such as:
 
-```
+```python
 duration_mapping = {
     'whole': 4,
     'half': 2,
@@ -201,18 +210,20 @@ duration_mapping = {
 
 which will be used in our (no longer) one hot vector. Taking the same example as before, if F♯ is a "half":
 
-```
+```text
 ...0,0,0,0,0,2,0...∣...0,0,0,0,1,0,0,0...∣...0,0,0,0,0,1,0...0
 ```
 
 In summary, the model combines the mathematical understanding of music theory with interactive and feedback-based learning tools. This approach can significantly enhance the speed and depth of musical understanding. We think it could be potentially a better way to represent musical notes, for example better than MIDI values.
 
-# Code
+## Code
+
 To be reviewed.
 We can represent a note as an integer value, a position in a 2D matrix (i, j), a position in a 3D matrix where x and y represent the 7x3 and z the octave. Note that common visualization would be to pile up the 7x3 matrix (as in a piano or piano roll), but piling them up in the z-axis can give as a perfect pattern and a way to process all notes at the same time.
 
 Basic formulas using mostly lookup tables
-```
+
+```python
 def note_row(note_name):
     # TODO Check whether is better to use N.get(note_name) -> This return None
     # if value does not exist.
@@ -227,8 +238,10 @@ def note_column(note_name, alteration, keysig = "C major"):
 ```
 
 Basic formulas using arrays (it can process several notes at a time)
-```
+
 We can batch processing all notes of a single octave at a time using arrays as we did in the example at the beggining of this document.
+
+```python
 i = index of the note in the array + 1 (if 0 base index)
 And "j" as in:
 
@@ -236,8 +249,7 @@ Mkey = - base_notes * ((base_notes + key_signature) -1)
 j = base_notes * (M + Mkey + 2)
 ```
 
-# Visualization
-
+## Visualization
 
 The PENTAGROM project was created using the new SISTEMA SOLFEO XXI musical theory and notation system based on an array of  
 ```[(7 rows x constant) x 3 columns] + key signature```  
