@@ -1,0 +1,23 @@
+#notes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 10px;
+    max-width: 300px;
+    margin: auto;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4CAF50;
+    cursor: pointer;
+    user-select: none; /* Prevents text selection */
+}
+
+.active {
+    background-color: #FF5733; /* Or any color you prefer */
+}
